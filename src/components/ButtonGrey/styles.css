@@ -1,0 +1,30 @@
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 5px;
+  background: var(--color-grey-2);
+  border: 1.4px solid var(--color-grey-2);
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #343a40;
+}
+button:hover {
+  background-color: var(--color-grey-5);
+  border-color: var(--color-grey-5);
+  color: var(--color-white);
+}
+button:focus {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+}

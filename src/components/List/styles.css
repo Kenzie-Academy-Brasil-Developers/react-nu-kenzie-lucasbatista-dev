@@ -1,0 +1,37 @@
+.containerList {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  gap: 30px;
+}
+.containerList nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.containerList nav p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-grey-4);
+}
+.containerList nav div {
+  display: flex;
+  gap: 15px;
+}
+.msgUl {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  color: #343a40;
+}
+.containerEmptyCard {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

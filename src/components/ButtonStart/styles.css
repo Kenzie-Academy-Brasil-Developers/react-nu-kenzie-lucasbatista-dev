@@ -1,0 +1,23 @@
+.btnStart {
+  padding: 13px 20px;
+  gap: 10px;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  color: var(--color-white);
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Inter", sans-serif;
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnStart:hover {
+  background-color: var(--color-primary-2);
+  border-color: var(--color-primary-2);
+  color: var(--color-white);
+}

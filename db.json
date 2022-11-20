@@ -1,0 +1,32 @@
+{
+  "dados": [
+    {
+      "description": "bonus",
+      "value": "850",
+      "category": {
+        "id": "1",
+        "name": "Entrada"
+      },
+      "id": 3
+    },
+    {
+      "description": "teste2 ",
+      "value": "22",
+      "category": {
+        "id": "2",
+        "name": "Saída"
+      },
+      "id": 4
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Entrada"
+    },
+    {
+      "id": 2,
+      "name": "Saída"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+.containerTotal {
+  width: 350px;
+  height: 100px;
+  padding: 24px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 30px;
+  background: var(--color-white);
+  border: 1px solid var(--color-grey-2);
+  border-radius: 4px;
+}
+.containerTotal p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-grey-4);
+}
+.containerTotal span {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-primary);
+}
+.containerTotal span:hover {
+  color: var(--color-primary-2);
+}
