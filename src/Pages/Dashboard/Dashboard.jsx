@@ -15,7 +15,7 @@ export const Dashboard = () => {
       body: JSON.stringify(dataBase),
     })
       .then((resp) => resp.json())
-
+      .then((resp) => {})
       .catch((err) => console.log(err));
   }
   const [data, setData] = useState([]);

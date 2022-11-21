@@ -1,8 +1,17 @@
 {
   "dados": [
     {
+      "description": "Alimentação",
+      "value": "350",
+      "category": {
+        "id": "2",
+        "name": "Saída"
+      },
+      "id": 2
+    },
+    {
       "description": "bonus",
-      "value": "850",
+      "value": "100",
       "category": {
         "id": "1",
         "name": "Entrada"
@@ -10,13 +19,22 @@
       "id": 3
     },
     {
-      "description": "teste2 ",
-      "value": "22",
+      "description": "teste3 ",
+      "value": "450",
       "category": {
-        "id": "2",
-        "name": "Saída"
+        "id": "1",
+        "name": "Entrada"
       },
       "id": 4
+    },
+    {
+      "description": "Salário",
+      "value": "1800",
+      "category": {
+        "id": "1",
+        "name": "Entrada"
+      },
+      "id": 5
     }
   ],
   "categories": [

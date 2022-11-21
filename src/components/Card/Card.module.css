@@ -65,3 +65,8 @@
   border-bottom-left-radius: 8px;
   background-color: #03b898;
 }
+@media (max-width: 900px) {
+  .containerCard {
+    width: 100%;
+  }
+}

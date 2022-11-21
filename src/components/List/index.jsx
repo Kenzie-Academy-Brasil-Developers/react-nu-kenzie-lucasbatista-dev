@@ -6,6 +6,8 @@ import "./styles.css";
 
 export const List = () => {
   const [data, setData] = useState([]);
+  const [btn, setBtn] = useState(false);
+  console.log(btn);
 
   useEffect(() => {
     fetch("http://localhost:3333/dados", {
@@ -26,11 +28,13 @@ export const List = () => {
   const filterEntries = () => {
     const result = data.filter((item) => item.category.name === "Entrada");
     setFiltered(result);
+    setBtn(true);
   };
 
   const filterOuts = () => {
     const result = data.filter((item) => item.category.name === "Saída");
     setFiltered(result);
+    setBtn(true);
   };
 
   const filterAll = () => {
@@ -39,6 +43,7 @@ export const List = () => {
         item.category.name === "Saída" || item.category.name === "Entrada"
     );
     setFiltered(result);
+    setBtn(true);
   };
 
   function removeData(id) {
@@ -66,6 +71,18 @@ export const List = () => {
         </div>
       </nav>
       <ul className="teste">
+        {btn == false &&
+          data.map((item, index) => (
+            <Card
+              description={item.description}
+              value={item.value}
+              type={item.category.name}
+              key={index}
+              id={item.id}
+              category={item.category.name}
+              handleRemove={removeData}
+            />
+          ))}
         {data.length > 0 &&
           filtered.map((item, index) => (
             <Card
@@ -78,8 +95,8 @@ export const List = () => {
               handleRemove={removeData}
             />
           ))}
-        {}
-        {filtered.length === 0 && (
+
+        {data.length === 0 && (
           <div className="containerEmptyCard">
             <p className="msgUl">Você ainda não possui nenhum lançamento</p>
             <img src={EmptyCard} alt="" />

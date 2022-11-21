@@ -1,5 +1,5 @@
 import styles from "./Card.module.css";
-import { IoIosTrash } from "react-icons/Io";
+import { FaTrash } from "react-icons/Fa";
 
 export const Card = ({
   id,
@@ -26,7 +26,7 @@ export const Card = ({
       <div className={styles.price}>
         <p>R${value}</p>
         <button type="button" onClick={remove}>
-          <IoIosTrash />
+          <FaTrash />
         </button>
       </div>
     </li>
